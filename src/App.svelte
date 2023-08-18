@@ -6,6 +6,7 @@
   import Row from './lib/Row/Row.svelte';
   import Counter from './lib/Counter/Counter.svelte';
   import Numbers from './lib/Numbers/Numbers.svelte';
+  import Await from './lib/Await/Await.svelte';
 
   //* All top-level assignments are equal to the state variable.
 
@@ -61,6 +62,9 @@
   </Row>
   <Row>
   <Numbers />
+  </Row>
+  <Row>
+    <Await />
   </Row>
 </main>
 
