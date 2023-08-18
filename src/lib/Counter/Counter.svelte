@@ -25,6 +25,12 @@
 	}
 </script>
 
+<strong>
+  Reactivity
+</strong>
+
+<br><br>
+
 <button on:click={handleClick}> <!-- Event handling -->
 	Clicked {count}
 	{count === 1 ? 'time' : 'times'}

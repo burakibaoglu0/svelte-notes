@@ -12,9 +12,19 @@
 	$: sum = numbers.reduce((t, n) => t + n, 0);
 </script>
 
+<strong>
+	Updating arrays
+</strong>
+
 <p>{numbers.join(' + ')} = {sum}</p>
 
 <button on:click={addNumber}> Add a number </button>
+
+<br><br>
+
+<strong>
+	Updating objects
+</strong>
 
 <br><br>
 

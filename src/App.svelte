@@ -43,9 +43,13 @@
 <main>
   <Row>
     <div>
+      <strong>
+        Each blocks
+      </strong>
+      <br><br>
       <!-- Mapping -->
-      {#each pageLinks as pageLink}
-        <Link {...pageLink.link}> <!-- Destructuring For Props -->
+      {#each pageLinks as pageLink, index (pageLink.link)}
+        <Link hasTitle={index === 0 ? true : false} {...pageLink.link}> <!-- Destructuring For Props -->
           <Image {...pageLink.image}/> <!-- Slot -->
         </Link>
       {/each}
