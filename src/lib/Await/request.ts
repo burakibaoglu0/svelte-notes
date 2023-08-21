@@ -1,7 +1,7 @@
-const parseData = (data:object):FormData => {
+const parseData = (data: object): FormData => {
   let formData = new FormData();
 
-  for (let key of Object.keys(data)){
+  for (let key of Object.keys(data)) {
     formData.append(key, data[key]);
   }
 
@@ -10,7 +10,7 @@ const parseData = (data:object):FormData => {
 
 const request = async (url: string, method: string = 'POST', data: any = false): Promise<any> => {
   const options = {
-      method
+    method
   };
 
   data && (() => options['body'] = JSON.stringify(data))(); //* JSON
@@ -21,7 +21,7 @@ const request = async (url: string, method: string = 'POST', data: any = false):
   return responseData;
 };
 
-export const _post = (url:string, data:object) => request(url,'POST',data);
-export const _get = (url:string) => request(url, 'GET');
+export const _post = (url: string, data: object) => request(url, 'POST', data);
+export const _get = (url: string) => request(url, 'GET');
 
 export default request;

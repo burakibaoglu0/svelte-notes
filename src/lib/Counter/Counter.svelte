@@ -1,41 +1,40 @@
 <script lang="ts">
   /**
-   * * Reactivity 
+   * * Reactivity
    */
 
-	let count = 0;
+  let count = 0;
 
-	const handleClick = () => {
-		count += 1; //! You must use the assignment operator to set a new value.
-	}
+  const handleClick = () => {
+    count += 1; //! You must use the assignment operator to set a new value.
+  };
 
   /**
    * * Computed variables
-  */
+   */
 
   $: doubled = count * 2;
 
   /**
    * * Watcher && Statement
-  */
+   */
 
-	$: if (count >= 10) {
-		alert('count is dangerously high!');
-		count = 9;
-	}
+  $: if (count >= 10) {
+    alert("count is dangerously high!");
+    count = 9;
+  }
 </script>
 
-<strong>
-  Reactivity
-</strong>
+<strong> Reactivity </strong>
 
-<br><br>
+<br /><br />
 
-<button on:click={handleClick}> <!-- Event handling -->
-	Clicked {count}
-	{count === 1 ? 'time' : 'times'}
+<button on:click={handleClick}>
+  <!-- Event handling -->
+  Clicked {count}
+  {count === 1 ? "time" : "times"}
 </button>
 
-<br>
+<br />
 
 <p>{count} doubled is {doubled}</p>

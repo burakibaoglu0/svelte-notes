@@ -5,7 +5,7 @@
 </div>
 
 <style>
-  .row{
+  .row {
     margin: 10px 0;
     padding: 10px 0;
     border-top: 1px solid #f1f1f1;

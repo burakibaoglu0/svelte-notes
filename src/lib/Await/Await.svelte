@@ -12,10 +12,10 @@
   const handleClick = () => {
     addPost({
       userId: 1,
-      title: 'Test title',
-      body: 'Test body'
-    })
-  }
+      title: "Test title",
+      body: "Test body",
+    });
+  };
 </script>
 
 <div>
@@ -77,8 +77,7 @@
 </div>
 
 <style>
-
-  .dynamicContent{
+  .dynamicContent {
     min-height: 320px;
   }
 
@@ -97,11 +96,11 @@
     flex-direction: column;
   }
 
-  ul li h3{
+  ul li h3 {
     flex: 1;
   }
 
-  ul li p{
+  ul li p {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: initial;
@@ -110,7 +109,7 @@
     -webkit-box-orient: vertical;
   }
 
-  button{
+  button {
     margin: 0 0 15px;
   }
 </style>
