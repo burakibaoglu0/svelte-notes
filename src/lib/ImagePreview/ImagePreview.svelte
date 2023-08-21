@@ -19,7 +19,7 @@
     bind:this={inputElement}
     type="file"
     accept="image/*"
-    on:change={handleChange}
+    on:change|once={handleChange}
   />
 
   <!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -32,7 +32,7 @@
       <img {src} alt="" />
       <button
         style={!isButtonActive ? "display: none;" : ""}
-        on:click={() => inputElement.click()}
+        on:click|stopPropagation={() => inputElement.click()}
       >
         Change image
       </button>
