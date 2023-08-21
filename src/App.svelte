@@ -7,6 +7,7 @@
   import Counter from './lib/Counter/Counter.svelte';
   import Numbers from './lib/Numbers/Numbers.svelte';
   import Await from './lib/Await/Await.svelte';
+  import ImagePreview from './lib/ImagePreview/ImagePreview.svelte';
 
   //* All top-level assignments are equal to the state variable.
 
@@ -65,6 +66,9 @@
   </Row>
   <Row>
     <Await />
+  </Row>
+  <Row>
+    <ImagePreview />
   </Row>
 </main>
 
